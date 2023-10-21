@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.speech-box {
+    width: 50%;
+    box-shadow: 2px 2px 10px rgb(192, 191, 191);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem 0;
+}
+
+.speech-heading {
+    width: 100%;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.speech-body {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.speech-body>p {
+    margin-bottom: 0.5rem;
+}
+
+#text {
+    width: 100%;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(149, 55, 236);
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+#btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: rgb(149, 55, 236);
+    color: #fff;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#btn:hover {
+    background-color: blueviolet;
+}
+
+@media (min-width:1025px) and (max-width:1200px) {
+    .speech-box {
+        width: 60%;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .speech-box {
+        width: 80%;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    .container {
+        padding: 5rem 3rem;
+    }
+    .speech-box {
+        width: 100%;
+        gap: 1.5rem 0;
+    }
+}
+
+@media (min-width:320px) and (max-width:480px) {
+    .container {
+        padding: 5rem 1rem;
+    }
+    .speech-box {
+        width: 100%;
+        gap: 1rem 0;
+        padding: 1rem;
+    }
+    .speech-heading>h2 {
+        font-size: 1.4rem;
+    }
+    .speech-body>p {
+        font-size: 1rem;
+    }
+    #text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width:0px) and (max-width:319px) {
+    .container {
+        padding: 5rem 0.5rem;
+    }
+    .speech-box {
+        width: 100%;
+        gap: 1rem 0;
+        padding: 0.5rem;
+    }
+    .speech-heading>h2 {
+        font-size: 1.2rem;
+    }
+    .speech-body>p {
+        font-size: 0.9rem;
+    }
+    #text {
+        font-size: 0.9rem;
+    }
+    #btn {
+        font-size: 0.9rem;
+    }
+}
